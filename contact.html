@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>(function(){var s=localStorage.getItem('theme');if(s)document.documentElement.setAttribute('data-theme',s);})();</script>
 <title>Contact WiseRobot | Book a Free Automation Discovery Call</title>
 <meta name="description" content="Get in touch with WiseRobot to discuss automating your business processes. Book a free discovery call — no obligation, no jargon.">
 <link rel="canonical" href="https://wiserobot.co.uk/contact.html">
@@ -17,7 +18,7 @@
 
 <header class="site">
   <div class="wrap">
-    <div class="logo"><a href="./"><img src="assets/logo-dark.svg" alt="WiseRobot"></a></div>
+    <div class="logo"><a href="./"><img src="assets/logo-dark.svg" alt="WiseRobot" class="logo-dark-img"><img src="assets/logo-light.svg" alt="WiseRobot" class="logo-light-img"></a></div>
     <input type="checkbox" id="nav-toggle" class="nav-toggle-input">
     <label for="nav-toggle" class="nav-toggle-label"><span></span><span></span><span></span></label>
     <nav class="main-nav">
@@ -26,6 +27,10 @@
       <a href="./#pricing">Pricing</a>
       <a href="blog/">Guides</a>
       <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="currentColor"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
     </nav>
   </div>
 </header>
@@ -78,5 +83,6 @@
 </footer>
 
 <script src="js/nav.js"></script>
+<script src="js/theme.js"></script>
 </body>
 </html>

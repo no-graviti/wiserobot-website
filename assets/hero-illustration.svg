@@ -1,7 +1,7 @@
 <svg viewBox="0 0 560 460" xmlns="http://www.w3.org/2000/svg">
 
   <!-- soft background blob -->
-  <ellipse cx="280" cy="230" rx="270" ry="220" fill="#f0fdfa"/>
+  <ellipse cx="280" cy="230" rx="270" ry="220" fill="#0d9488" fill-opacity="0.08"/>
 
   <!-- ===== LEFT: messy manual tasks ===== -->
   <g>
