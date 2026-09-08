@@ -63,6 +63,8 @@ header.site .wrap {
   letter-spacing: -0.02em;
 }
 .logo span { color: var(--blue); }
+.logo img { height: 26px; width: auto; display: block; }
+footer.site .logo img { height: 24px; }
 
 nav.main-nav a {
   color: var(--text);
