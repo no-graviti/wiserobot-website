@@ -3,8 +3,8 @@
 :root {
   --navy: #0f172a;
   --navy-light: #1e293b;
-  --blue: #2563eb;
-  --blue-light: #3b82f6;
+  --blue: #0d9488;
+  --blue-light: #14b8a6;
   --teal: #0ea5a4;
   --bg: #ffffff;
   --bg-soft: #f8fafc;
@@ -125,34 +125,21 @@ nav.main-nav a:hover { color: var(--blue); text-decoration: none; }
     display: flex;
   }
 
-  /* Centering on mobile */
-  .hero .wrap,
+  /* Centering on mobile — headings and buttons only; paragraphs stay left-aligned */
+  .hero h1,
+  .hero .eyebrow,
   section .wrap > h2,
-  section .wrap > p.section-lead,
-  .article-hero .wrap {
+  .article-hero h1,
+  .article-hero .kicker {
     text-align: center;
-  }
-  .hero p.lead,
-  section p.section-lead {
-    margin-left: auto;
-    margin-right: auto;
   }
   .hero .cta-row {
     justify-content: center;
   }
-  .price-card,
-  .card {
-    text-align: center;
-  }
-  .card .icon {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .price-card ul {
-    text-align: left;
-  }
-  section > .wrap > a.btn {
-    display: inline-block;
+  .price-card .btn {
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
   }
 }
 
