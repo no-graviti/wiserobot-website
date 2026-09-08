@@ -63,16 +63,98 @@ header.site .wrap {
   letter-spacing: -0.02em;
 }
 .logo span { color: var(--blue); }
-.logo img { height: 26px; width: auto; display: block; }
-footer.site .logo img { height: 24px; }
+.logo img { height: 34px; width: auto; display: block; }
+footer.site .logo img { height: 26px; }
 
+nav.main-nav {
+  display: flex;
+  align-items: center;
+}
 nav.main-nav a {
   color: var(--text);
   margin-left: 28px;
   font-weight: 500;
   font-size: 0.95rem;
+  white-space: nowrap;
 }
 nav.main-nav a:hover { color: var(--blue); text-decoration: none; }
+
+.nav-toggle-input { display: none; }
+.nav-toggle-label {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+.nav-toggle-label span {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background: var(--navy);
+  border-radius: 2px;
+}
+
+@media (max-width: 800px) {
+  header.site .wrap {
+    flex-wrap: wrap;
+  }
+  .nav-toggle-label { display: flex; }
+  nav.main-nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    order: 3;
+    padding-top: 18px;
+    margin-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  nav.main-nav a {
+    margin: 0;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+  }
+  nav.main-nav a.btn {
+    margin-top: 8px;
+  }
+  .nav-toggle-input:checked ~ nav.main-nav {
+    display: flex;
+  }
+
+  /* Centering on mobile */
+  .hero .wrap,
+  section .wrap > h2,
+  section .wrap > p.section-lead,
+  .article-hero .wrap {
+    text-align: center;
+  }
+  .hero p.lead,
+  section p.section-lead {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero .cta-row {
+    justify-content: center;
+  }
+  .price-card,
+  .card {
+    text-align: center;
+  }
+  .card .icon {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .price-card ul {
+    text-align: left;
+  }
+  section > .wrap > a.btn {
+    display: inline-block;
+  }
+}
 
 .btn {
   display: inline-block;
